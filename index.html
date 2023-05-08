@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Public Holidays</title>
+	<script src="main.js"></script>
+</head>
+<body>
+	<!-- List of public holidays for selected country -->
+	<label for="country">Select a Country:</label>
+	<select id="country">
+		<option value="USA">USA</option>
+		<option value="Canada">Canada</option>
+		<option value="UK">UK</option>
+	</select>
+	<button onclick="showHolidays()">Show Holidays</button>
+	<ul id="holidayList"></ul>
+
+	<!-- Weather information for selected public holiday in user's area -->
+	<label for="area">Select Your Area:</label>
+	<select id="area">
+		<option value="New York">New York</option>
+		<option value="Los Angeles">Los Angeles</option>
+		<option value="Toronto">Toronto</option>
+		<option value="Vancouver">Vancouver</option>
+		<option value="London">London</option>
+		<option value="Edinburgh">Edinburgh</option>
+	</select>
+	<label for="holiday">Select a Holiday:</label>
+	<select id="holiday">
+	</select>
+	<button onclick="showWeatherAndAccommodation()">Show Weather and Accommodation</button>
+	<p id="weather"></p>
+	<ul id="accommodationList"></ul>
+</body>
+</html>
